@@ -14,7 +14,7 @@ app = Flask(__name__)
 
 # http://localhost:5000/api_predict
 
-model_pk = pickle.load(open("model-flower_v1.pkl","rb"))
+model_pk = pickle.load(open("model-flower-v1.pkl","rb"))
 
 
 @app.route('/api_predict', methods = ['POST','GET'])
